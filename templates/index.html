@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block title %}ShareGram{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+
+{% block content %}
+<div class="sidehead1">
+</div>
+
+<!-- <div class="sidehead2">
+</div> -->
+
+<div class="card container mt-2" style="width: 30%;">
+  <br>
+    <img src="https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=976&q=80" alt="Profile Pic" class="user-img">
+    <p class="card-user">User Name</p>
+    <img src="https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=976&q=80" class="card-img-top" alt="Post Image">
+    <div class="card-body">
+      <h5 class="card-title">Post Title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn-like"><i class="far fa-heart fa-lg"></i></a>
+      <a href="#" class="btn-comnt"><i class="far fa-comment fa-lg"></i></a>
+      <p class="likes">0 likes</p>
+    </div>
+  </div>
+
+{% endblock %}
