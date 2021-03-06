@@ -18,10 +18,21 @@ body{
 }
 
 .colornav{
-    color:teal;
+    color:black;
     margin-left: 50%;
 }
 
+.search{
+    margin-left: 50%;
+}
+.search-btn{
+    margin-left: 150%;
+    display: inline-block;
+}
+
+.card-main{
+    margin-left: 30%;
+}
 
 .card-img-top {
     width: 100%;
@@ -31,8 +42,19 @@ body{
 
 .user-img{
     border-radius: 50%;
-    width: 10%;
-    height: 10%;
+    width: 32px;
+    height: 32px;
+}
+.pro-img{
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+}
+.suggest-pro-img{
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    margin-bottom: 3%;
 }
 
 .card-user{
@@ -49,7 +71,7 @@ body{
 }
 
 .btn-like:hover{
-    color: black;
+    color: white;
     background-color: rgb(255, 65, 65);
 }
 
@@ -66,6 +88,88 @@ body{
     text-align: left;
     font-weight: bold;
 }
+
+
+
+.card-side{
+    float:right;
+    overflow: auto;
+    margin-right: 19%;
+    margin-top: 3%;
+    background-color: rgb(248, 246, 246);
+    position: fixed;
+    
+}
+
+#bg-gray{
+    background-color: rgb(248, 246, 246);
+}
+
+.side-username{
+    margin-left: 5%;
+    display: inline-block;
+    font-weight: 600;
+    color: #262626;
+}
+
+.side-username:hover{
+    text-decoration: none;
+    color:#262626;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+
+#suggestion{
+    margin-top: 4%;
+    color: #8e8e8e;
+    font-weight: 600;
+    margin-bottom: 5%;
+}
+
+.suggest-username{
+    margin-left: 5%;
+    font-weight: 600;
+    color: #262626;
+}
+
+.suggest-username:hover{
+    text-decoration: none;
+    color:#262626;
+}
+
+.suggest-follow{
+    font-weight: 600;
+    color: #1DA1F6;
+    margin-left: 5%;
+    font-size: 12px;
+}
+
+.suggest-follow:hover{
+    text-decoration: none;
+    color:#1DA1F6 ;
+}
+
+.card-footer{
+    color: #c7c7c7;
+    font-weight: 400;
+    line-height: 13px;
+    text-transform: none;
+    font-size: 11px;
+}
+
+#copyright{
+    margin-top: 5%;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+
+
+
 
 .login-form{
     margin-top: 10vh;
