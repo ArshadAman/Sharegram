@@ -51,6 +51,10 @@ def login_user():
 def register_user():
     return render_template("register.html")
 
+@app.route("/profile")
+def profile():
+    return render_template("profile.html")
+
 
 
 

@@ -1,180 +1,173 @@
-*{
-    margin: 0;
+* {
+  margin: 0;
 }
 
-body{
-    background-color: black;
+body {
+  background-color: black;
 }
 
-.navbar{
-    background-color: white;
-    border-bottom: 1px solid gray;
+.navbar {
+  background-color: white;
+  border-bottom: 1px solid gray;
 }
 
-.navbar-brand{
-    margin-left: 25%;
-    color: black;
-    font-weight: bold;
+.navbar-brand {
+  margin-left: 25%;
+  color: black;
+  font-weight: bold;
 }
 
-.colornav{
-    color:black;
-    margin-left: 50%;
+.colornav {
+  color: black;
+  margin-left: 50%;
 }
 
-.search{
-    margin-left: 50%;
+.search {
+  margin-left: 50%;
 }
-.search-btn{
-    margin-left: 150%;
-    display: inline-block;
+.search-btn {
+  margin-left: 150%;
+  display: inline-block;
 }
 
-.card-main{
-    margin-left: 30%;
+.card-main {
+  margin-left: 30%;
+  margin-bottom: 2%;
 }
 
 .card-img-top {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
-.user-img{
-    border-radius: 50%;
-    width: 32px;
-    height: 32px;
+.user-img {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
 }
-.pro-img{
-    border-radius: 50%;
-    width: 56px;
-    height: 56px;
+.pro-img {
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
 }
-.suggest-pro-img{
-    border-radius: 50%;
-    width: 32px;
-    height: 32px;
-    margin-bottom: 3%;
-}
-
-.card-user{
-    display: inline-block;
-    font-size: 1rem;
-    line-height: 0.8;
-    font-weight: bold;
-    text-align: justify;
+.suggest-pro-img {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 3%;
 }
 
-.btn-like{
-    display: inline;
-    color: black;
+.card-user {
+  display: inline-block;
+  font-size: 1rem;
+  line-height: 0.8;
+  font-weight: bold;
+  text-align: justify;
 }
 
-.btn-like:hover{
-    color: white;
-    background-color: rgb(255, 65, 65);
+.btn-like {
+  display: inline;
+  color: black;
 }
 
-.btn-comnt{
-    display: inline;
-    color: black;
-    margin-left: 6%;
-}
-.btn-comnt:hover{
-    color: seagreen;
+.btn-like:hover {
+  color: white;
+  background-color: rgb(255, 65, 65);
 }
 
-.likes{
-    text-align: left;
-    font-weight: bold;
+.btn-comnt {
+  display: inline;
+  color: black;
+  margin-left: 6%;
+}
+.btn-comnt:hover {
+  color: seagreen;
 }
 
-
-
-.card-side{
-    float:right;
-    overflow: auto;
-    margin-right: 19%;
-    margin-top: 3%;
-    background-color: rgb(248, 246, 246);
-    position: fixed;
-    
+.likes {
+  text-align: left;
+  font-weight: bold;
 }
 
-#bg-gray{
-    background-color: rgb(248, 246, 246);
+.card-side {
+  float: right;
+  overflow: auto;
+  margin-right: 19%;
+  margin-top: 3%;
+  background-color: rgb(248, 246, 246);
+  position: fixed;
 }
 
-.side-username{
-    margin-left: 5%;
-    display: inline-block;
-    font-weight: 600;
-    color: #262626;
+#bg-gray {
+  background-color: rgb(248, 246, 246);
 }
 
-.side-username:hover{
-    text-decoration: none;
-    color:#262626;
+.side-username {
+  margin-left: 5%;
+  display: inline-block;
+  font-weight: 600;
+  color: #262626;
+}
+
+.side-username:hover {
+  text-decoration: none;
+  color: #262626;
 }
 
 ul {
-    padding: 0;
-    list-style-type: none;
+  padding: 0;
+  list-style-type: none;
 }
 
-
-#suggestion{
-    margin-top: 4%;
-    color: #8e8e8e;
-    font-weight: 600;
-    margin-bottom: 5%;
+#suggestion {
+  margin-top: 4%;
+  color: #8e8e8e;
+  font-weight: 600;
+  margin-bottom: 5%;
 }
 
-.suggest-username{
-    margin-left: 5%;
-    font-weight: 600;
-    color: #262626;
+.suggest-username {
+  margin-left: 5%;
+  font-weight: 600;
+  color: #262626;
 }
 
-.suggest-username:hover{
-    text-decoration: none;
-    color:#262626;
+.suggest-username:hover {
+  text-decoration: none;
+  color: #262626;
 }
 
-.suggest-follow{
-    font-weight: 600;
-    color: #1DA1F6;
-    margin-left: 5%;
-    font-size: 12px;
+.suggest-follow {
+  font-weight: 600;
+  color: #1da1f6;
+  margin-left: 5%;
+  font-size: 12px;
 }
 
-.suggest-follow:hover{
-    text-decoration: none;
-    color:#1DA1F6 ;
+.suggest-follow:hover {
+  text-decoration: none;
+  color: #1da1f6;
 }
 
-.card-footer{
-    color: #c7c7c7;
-    font-weight: 400;
-    line-height: 13px;
-    text-transform: none;
-    font-size: 11px;
+.card-footer {
+  color: #c7c7c7;
+  font-weight: 400;
+  line-height: 13px;
+  text-transform: none;
+  font-size: 11px;
 }
 
-#copyright{
-    margin-top: 5%;
-    text-transform: uppercase;
-    font-size: 11px;
+#copyright {
+  margin-top: 5%;
+  text-transform: uppercase;
+  font-size: 11px;
 }
 
-
-
-
-
-.login-form{
-    margin-top: 10vh;
+.login-form {
+  margin-top: 10vh;
 }
 
-.btn-login{
-    width: 30%;
+.btn-login {
+  width: 30%;
 }

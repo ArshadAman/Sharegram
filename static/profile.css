@@ -1,0 +1,72 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.maindiv{
+    width: 100%;
+}
+.maindiv img {
+  width: 150px;
+  height: 150px;
+  border: 2.5px solid rgb(58, 57, 57);
+  border-radius: 100%;
+  margin-left: 24%;
+  margin-top: 2.5%;
+}
+
+.user-detail {
+  display: inline;
+  float: right;
+  margin-top: 2.5%;
+  margin-right: 35%;
+  width: 60%;
+}
+
+#username{
+    color: #262626;
+    font-weight: 300;
+    display: inline;
+    font-size: 28px;
+    line-height: 32px;
+}
+
+.editprofile{
+    text-decoration: none;
+    color:#262626;
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 4px;
+    margin-left: 4%;
+}
+
+.editprofile:hover, a:hover{
+    color:#262626;
+    text-decoration: none;
+}
+
+.counts{
+    color: inherit;
+    margin-right: 5%;
+    font-size: 16px;
+}
+
+#counts{
+    margin-top: 6%;
+}
+
+.name{
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 5%;
+}
+
+
+.posts img{
+   width: 350px;
+   height: 350px;
+}
+.posts{
+   width: 350px;
+   height: 350px;
+}

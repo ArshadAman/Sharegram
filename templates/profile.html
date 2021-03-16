@@ -1,15 +1,86 @@
-{% extends "layout.html" %}
-{% block title %}ShareGram{% endblock %}
-{% block head %}
-  {{ super() }}
-{% endblock %}
+{% extends "layout.html" %} {% block title %}intekab_raza{% endblock %} {% block
+head %} {{ super() }}
+<link rel="stylesheet" href="{{ url_for('static', filename='profile.css') }}" />
+{% endblock %} {% block content %}
 
-{% block content %}
+<div class="maindiv">
+  <img
+    src="https://pbs.twimg.com/profile_images/1288376609100066816/hPbV4SKk_400x400.jpg"
+    alt="Profile Picture"
+    class="pro-img"
+  />
+  <div class="card user-detail border-0" style="width: 25rem">
+    <div class="card-header border-0">
+      <h2 id="username">intekab_raza</h2>
+      <a href="#" class="editprofile">Edit Profile</a>
+      <!-- <a href="#">Follow</a> -->
 
+      <div id="counts">
+        <a href="#" class="counts"><strong>100</strong> post</a>
+        <a href="#" class="counts"><strong>100M</strong> followers</a>
+        <a href="#" class="counts"><strong>180</strong> followings</a>
+      </div>
 
+      <div class="description">
+        <h1 class="name">Intekab Raza</h1>
+        <p id="desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
+          consequuntur Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Dolores laboriosam consequuntur harum impedit. Reiciendis?
+        </p>
+      </div>
+    </div>
+  </div>
 
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+<hr>
+</div>
 
+<div class="container">
+<div class="card-deck mb-4">
+  <div class="card posts border-0">
+    <img src="https://pbs.twimg.com/profile_images/1288376609100066816/hPbV4SKk_400x400.jpg" class="card-img-top" alt="...">
+  </div>
+  <div class="card posts">
+    <img src="https://pbs.twimg.com/profile_images/1288376609100066816/hPbV4SKk_400x400.jpg" class="card-img-top" alt="...">
+  </div>
+  <div class="card posts">
+    <img src="https://pbs.twimg.com/profile_images/1288376609100066816/hPbV4SKk_400x400.jpg" class="card-img-top" alt="...">
+  </div>
+</div>
+<div class="card-deck mb-4">
+  <div class="card posts border-0">
+    <img src="https://pbs.twimg.com/profile_images/1288376609100066816/hPbV4SKk_400x400.jpg" class="card-img-top" alt="...">
+  </div>
+  <div class="card posts border-0">
+    <img src="https://pbs.twimg.com/profile_images/1288376609100066816/hPbV4SKk_400x400.jpg" class="card-img-top" alt="...">
+  </div>
+  <div class="card posts">
+    <img src="https://pbs.twimg.com/profile_images/1288376609100066816/hPbV4SKk_400x400.jpg" class="card-img-top" alt="...">
+  </div>
+</div>
+<div class="card-deck mb-4">
+  <div class="card posts border-0">
+    <img src="https://pbs.twimg.com/profile_images/1288376609100066816/hPbV4SKk_400x400.jpg" class="card-img-top" alt="...">
+  </div>
+  <div class="card posts">
+    <img src="https://pbs.twimg.com/profile_images/1288376609100066816/hPbV4SKk_400x400.jpg" class="card-img-top" alt="...">
+  </div>
+  <div class="card posts">
+    <img src="https://pbs.twimg.com/profile_images/1288376609100066816/hPbV4SKk_400x400.jpg" class="card-img-top" alt="...">
+  </div>
+</div>
 
-
+<!-- Container div  -->
+</div> 
 
 {% endblock %}

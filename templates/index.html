@@ -1,56 +1,121 @@
-{% extends "layout.html" %}
-{% block title %}ShareGram{% endblock %}
-{% block head %}
-  {{ super() }}
-{% endblock %}
-
-{% block content %}
+{% extends "layout.html" %} {% block title %}ShareGram{% endblock %} {% block
+head %} {{ super() }} {% endblock %} {% block content %}
 <!-- #SideBar -->
 
-<div class="card card-side border-0" style="width: 18rem;" id="bg-gray">
+<div class="card card-side border-0" style="width: 18rem" id="bg-gray">
   <div class="container mb-2">
-    <img src="https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=976&q=80" alt="Profile Pic" class="pro-img">
+    <img
+      src="https://lh3.googleusercontent.com/ogw/ADGmqu-Wnq33yg03-1sYV3hfLhSEnYFHWUo_ovYly3iZlQ=s83-c-mo"
+      alt="Profile Pic"
+      class="pro-img"
+    />
     <a class="side-username" href="#">mearshadaman</a>
 
     <!-- #Suggested Account  Remove multiple copies while coding backend-->
 
-    <div id="suggestion" >Suggestions For You</div>
+    <div id="suggestion">Suggestions For You</div>
 
     <ul>
-      <li><img src="https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=976&q=80" alt="Profile Pic" class="suggest-pro-img">
-        <a class="suggest-username" href="#">mearshadaman</a> <a href="#" class="suggest-follow">Follow</a></li>
-      <li><img src="https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=976&q=80" alt="Profile Pic" class="suggest-pro-img">
-        <a class="suggest-username" href="#">intekab_raza</a> <a href="#" class="suggest-follow">Follow</a></li>
-      <li><img src="https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=976&q=80" alt="Profile Pic" class="suggest-pro-img">
-        <a class="suggest-username" href="#">mrutunjaypanda</a> <a href="#" class="suggest-follow">Follow</a></li>
+      <li>
+        <img
+          src="https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=976&q=80"
+          alt="Profile Pic"
+          class="suggest-pro-img"
+        />
+        <a class="suggest-username" href="#">mearshadaman</a>
+        <a href="#" class="suggest-follow">Follow</a>
+      </li>
+      <li>
+        <img
+          src="https://pbs.twimg.com/profile_images/1288376609100066816/hPbV4SKk_400x400.jpg"
+          alt="Profile Pic"
+          class="suggest-pro-img"
+        />
+        <a class="suggest-username" href="#">intekab_raza</a>
+        <a href="#" class="suggest-follow">Follow</a>
+      </li>
+      <li>
+        <img
+          src="https://pbs.twimg.com/profile_images/1350009792115347456/EP7lQVnc_400x400.jpg"
+          alt="Profile Pic"
+          class="suggest-pro-img"
+        />
+        <a class="suggest-username" href="#">mrutunjaypanda</a>
+        <a href="#" class="suggest-follow">Follow</a>
+      </li>
     </ul>
-
   </div>
   <div class="card-footer border-0" id="bg-gray">
-    About . Help . Press . API . Jobs . Privacy . Terms . Locations . Top Accounts . Hashtags . Language . 
-English
+    About . Help . Press . API . Jobs . Privacy . Terms . Locations . Top
+    Accounts . Hashtags . Language . English
 
-<div id="copyright">© 2021 ShareGram FROM CODEINPUT</div> 
+    <div id="copyright">© 2021 ShareGram FROM CODEINPUT</div>
   </div>
 </div>
 
 <!-- Post Card  -->
 
-<div class="card card-main mt-2" style="width: 30%;">
-  <br>
+<div class="card card-main mt-2" style="width: 30%">
+  <br />
   <div class="container mb-2">
-    <img src="https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=976&q=80" alt="Profile Pic" class="user-img">
+    <img
+      src="https://pbs.twimg.com/profile_images/1288376609100066816/hPbV4SKk_400x400.jpg"
+      alt="Profile Pic"
+      class="user-img"
+    />
     <p class="card-user">intekab_raza</p>
   </div>
-    <img src="https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=976&q=80" class="card-img-top" alt="Post Image">
-    <div class="card-body">
-      <h5 class="card-title">Post Title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn-like"><i class="far fa-heart fa-lg"></i></a>
-      <a href="#" class="btn-comnt"><i class="far fa-comment fa-lg"></i></a>
-      <p class="likes">100 likes</p>
-    </div>
+  <img
+    src="https://pbs.twimg.com/profile_images/1288376609100066816/hPbV4SKk_400x400.jpg"
+    class="card-img-top"
+    alt="Post Image"
+  />
+  <div class="card-body">
+    <h5 class="card-title">Hello ShareGram</h5>
+    <p class="card-text">
+      Hello ShareGram. I love to share things Lorem ipsum, dolor sit amet
+      consectetur adipisicing elit. Provident eaque beatae, dicta cumque
+      assumenda quidem ullam voluptas doloribus repudiandae dolorum nulla
+      nesciunt dolores. Commodi dolorem culpa vitae nam aut iusto incidunt,
+      debitis necessitatibus nihil eos quia alias temporibus explicabo? Illum
+      sequi vel, repudiandae harum nulla quos! Iste incidunt quaerat expedita.
+    </p>
+    <a href="#" class="btn-like"><i class="far fa-heart fa-lg"></i></a>
+    <a href="#" class="btn-comnt"><i class="far fa-comment fa-lg"></i></a>
+    <p class="likes">100 likes</p>
   </div>
+</div>
 
+<!-- Second Post -->
+<div class="card card-main mt-2" style="width: 30%">
+  <br />
+  <div class="container mb-2">
+    <img
+      src="https://pbs.twimg.com/profile_images/1350009792115347456/EP7lQVnc_400x400.jpg"
+      alt="Profile Pic"
+      class="user-img"
+    />
+    <p class="card-user">mrutunjaypanda</p>
+  </div>
+  <img
+    src="https://pbs.twimg.com/profile_images/1350009792115347456/EP7lQVnc_400x400.jpg"
+    class="card-img-top"
+    alt="Post Image"
+  />
+  <div class="card-body">
+    <h5 class="card-title">Hello ShareGram</h5>
+    <p class="card-text">
+      Hello ShareGram. I love to share things Lorem ipsum, dolor sit amet
+      consectetur adipisicing elit. Provident eaque beatae, dicta cumque
+      assumenda quidem ullam voluptas doloribus repudiandae dolorum nulla
+      nesciunt dolores. Commodi dolorem culpa vitae nam aut iusto incidunt,
+      debitis necessitatibus nihil eos quia alias temporibus explicabo? Illum
+      sequi vel, repudiandae harum nulla quos! Iste incidunt quaerat expedita.
+    </p>
+    <a href="#" class="btn-like"><i class="far fa-heart fa-lg"></i></a>
+    <a href="#" class="btn-comnt"><i class="far fa-comment fa-lg"></i></a>
+    <p class="likes">1k likes</p>
+  </div>
+</div>
 
 {% endblock %}
