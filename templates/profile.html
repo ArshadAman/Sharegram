@@ -1,17 +1,17 @@
-{% extends "layout.html" %} {% block title %}intekab_raza{% endblock %} {% block
+{% extends "layout.html" %} {% block title %}{{current_user.username}}{% endblock %} {% block
 head %} {{ super() }}
 <link rel="stylesheet" href="{{ url_for('static', filename='profile.css') }}" />
 {% endblock %} {% block content %}
 
 <div class="maindiv">
   <img
-    src="https://pbs.twimg.com/profile_images/1288376609100066816/hPbV4SKk_400x400.jpg"
+    src="https://lh3.googleusercontent.com/ogw/ADGmqu-Wnq33yg03-1sYV3hfLhSEnYFHWUo_ovYly3iZlQ=s83-c-mo"
     alt="Profile Picture"
     class="pro-img"
   />
   <div class="card user-detail border-0" style="width: 25rem">
     <div class="card-header border-0">
-      <h2 id="username">intekab_raza</h2>
+      <h2 id="username">{{current_user.username}}</h2>
       <a href="#" class="editprofile">Edit Profile</a>
       <!-- <a href="#">Follow</a> -->
 
@@ -22,7 +22,7 @@ head %} {{ super() }}
       </div>
 
       <div class="description">
-        <h1 class="name">Intekab Raza</h1>
+        <h1 class="name">{{current_user.name}}</h1>
         <p id="desc">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
           consequuntur Lorem ipsum dolor sit amet consectetur adipisicing elit.

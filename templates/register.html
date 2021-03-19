@@ -1,5 +1,5 @@
 {% extends "layout.html" %}
-{% block title %}Login to ShareGram{% endblock %}
+{% block title %}Register to ShareGram{% endblock %}
 {% block head %}
   {{ super() }}
 {% endblock %}
@@ -7,18 +7,29 @@
 {% block content %}
 
 <div class="container login-form">
-    <form>
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <div class="notification is-danger">
+            {{ messages[0] }}. Go to <a href="{{ url_for('login') }}">login page</a>.
+        </div>
+    {% endif %}
+    {% endwith %}
+    <form method="POST" action="/register">
     <div class="form-group">
-      <label for="username">User Name</label>
-      <input type="text" class="form-control" id="username" aria-describedby="username">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" aria-describedby="name" name="signup-name" required>
+    </div>
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" class="form-control" id="username" aria-describedby="username" name="signup-username" required>
     </div>
     <div class="form-group">
       <label for="email">Email address</label>
-      <input type="email" class="form-control" id="signup-email" aria-describedby="email">
+      <input type="email" class="form-control" id="signup-email" name="signup-email" aria-describedby="email" required>
     </div>
     <div class="form-group">
       <label for="Password">Password</label>
-      <input type="password" class="form-control" id="signup-password">
+      <input type="password" class="form-control" id="signup-password" name="signup-password" required>
     </div>
     <button type="submit" class="btn btn-primary btn-login">Submit</button>
   </form>

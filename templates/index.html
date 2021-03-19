@@ -9,7 +9,7 @@ head %} {{ super() }} {% endblock %} {% block content %}
       alt="Profile Pic"
       class="pro-img"
     />
-    <a class="side-username" href="#">mearshadaman</a>
+    <a class="side-username" href="{{ url_for('profile') }}">{{current_user.username}}</a>
 
     <!-- #Suggested Account  Remove multiple copies while coding backend-->
 
